@@ -41,7 +41,7 @@ namespace ZendeskApi.Client.Serialization
                 },
                 Converters =
                 {
-                    new StringEnumConverter { AllowIntegerValues = false, CamelCaseText = false }
+                    new StringEnumConverter { CamelCaseText = false }//JK: Removed  "AllowIntegerValues = false,"  because of older version 4.5.7
                 },
                 NullValueHandling = NullValueHandling.Ignore
                 
